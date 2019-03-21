@@ -170,6 +170,7 @@ func NewReader(r io.Reader) io.ReadCloser {
 // NewReaderDict is like NewReader but uses a preset dictionary.  NewReaderDict
 // ignores the dictionary if it is nil.
 func NewReaderDict(r io.Reader, dict []byte) io.ReadCloser {
+	fmt.Println("fuccccccccccccccccccccc")
 	var err error
 	ctx := C.ZBUFF_createDCtx()
 	if len(dict) == 0 {
